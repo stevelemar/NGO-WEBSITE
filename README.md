@@ -1,49 +1,90 @@
-PART 2
-
 # Bright Future Foundation Website
 
-### Test and Iterate
+## Changelog (Part 2)
+- Added `style.css` and linked across all pages.
+- Applied base typography, color scheme, and layout.
+- Created responsive design using Flexbox and media queries.
+- Updated images with `srcset` for responsiveness.
+- Incorporated feedback from Part 1:
+  - Added detailed project timeline (see Project Plan page).
+  - Added website structure explanation.
+  - Included operational hours on Contact page.
+  - Added images and improved creativity with styled sections.
+Bright Future Foundation Website
+Overview
 
-To ensure the *Bright Future Foundation* website delivers a consistent and user-friendly experience across various devices, the following steps were carried out:
+The Bright Future Foundation website is designed to showcase the organization’s mission to empower youth in Johannesburg through education, mentorship, scholarships, and career development programs. The site provides clear navigation, a responsive design, and interactive features to engage visitors, volunteers, and donors.
 
----
+Features Implemented
 
-####  Responsive Testing
+Responsive Design: Optimized for desktop, tablet, and mobile using flexible layouts and media queries.
 
-- **Developer Tools Used:**  
-  Utilized Chrome Developer Tools to simulate various screen sizes and devices.
+Header & Navigation:
 
-- **Screen Sizes Tested:**
-  - **Desktop:** Ensured full visibility of navigation bar, logo, hero section with "Donate Now" button, and content sections like "Our Impact" and "Get Involved".
-  - **Tablet:** Verified that all elements stack correctly and maintain readability.
-  - **Mobile:** Confirmed that navigation is accessible, text scales appropriately, and buttons (e.g., "Donate Now") are easily tappable.
+Logo and site title prominently displayed.
 
----
+Navigation links to Home, About Us, Gallery, Programs, Volunteer/Donate, and Contact pages.
 
-#### Screenshot Evidence
+Search box with live results filtering based on page title and keywords.
 
-**Desktop View:**
-![Desktop View](_C__Users_st10446203_OneDrive%20-%20ADvTECH%20Ltd_BFF_Updated_Website_NGO-WEB-SITE-main_WEBDEVELOPMENT%20WEBSITE_index.html(desktop).png)
+Search Functionality:
 
-**Mobile View:**
-![Mobile View](_C__Users_st10446203_OneDrive%20-%20ADvTECH%20Ltd_BFF_Updated_Website_NGO-WEB-SITE-main_WEBDEVELOPMENT%20WEBSITE_index.html(iPhone XR).png)
+JavaScript-powered search that filters through pages as users type.
 
-**TABLET View:**
-![TABLET View](TABLET.png)
+Clickable results redirect users to the respective pages.
 
+Automatically hides results when clicking outside the search box.
 
----
+Content Sections:
 
-####  Iteration Summary
+Hero section with call-to-action “Donate Now.”
 
-- Adjusted **navigation layout** to ensure visibility across screen sizes.
-- Tested the **"Donate Now"** CTA button for accessibility and responsiveness.
-- Verified that content like *Our Impact* and *Get Involved* remains centered and readable.
-- Ensured the **footer** remains aligned and does not overlap content.
-- Confirmed **color contrast** and font sizes meet accessibility standards.
+Impact section highlighting organizational achievements since 2010.
 
----
+“Get Involved” section detailing scholarships, mentorship, career development, and leadership programs.
 
- **Outcome:**  
-The website is fully responsive and optimized for desktop, tablet, and mobile users, providing an inclusive and accessible user experience.
+Footer & Social Links:
 
+Contact links with icons for Facebook, WhatsApp, Instagram, and X (Twitter).
+
+SEO & Metadata:
+
+Descriptive <title> and <meta> tags for search engines.
+
+Open Graph and Twitter Card metadata for social media sharing.
+
+Structured data using JSON-LD for NonprofitOrganization schema.
+
+Styling:
+
+External style.css linked for typography, colors, and layout.
+
+Inline styles for specific components like header, hero section, and footer.
+
+Search box styling with hover effects for better user experience.
+
+Changelog (Part 3)
+
+Integrated live JavaScript search functionality across the website.
+
+Updated header with a fully styled search bar and interactive results.
+
+Improved semantic HTML and accessibility by adding alt attributes for images.
+
+Linked social media icons to external platforms with proper sizing.
+
+Enhanced meta description, keywords, and OG/Twitter tags for better SEO.
+
+Added JSON-LD structured data to help search engines understand organizational details.
+
+Styled search results dynamically to display or hide based on user input.
+
+Next Steps
+
+Implement more advanced accessibility features (e.g., ARIA labels for search box).
+
+Add additional interactive elements for programs and volunteer sign-up.
+
+Optimize images using srcset for better performance on mobile devices.
+
+Include analytics tracking to measure user engagement.
