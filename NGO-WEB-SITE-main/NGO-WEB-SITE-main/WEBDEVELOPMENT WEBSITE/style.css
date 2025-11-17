@@ -1,0 +1,151 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fafafa;
+    color: #333;
+}
+
+h1, h2, h3 {
+    margin: 0;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    background-color: pink;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header img {
+    border-radius: 10px;
+}
+
+/* Navigation Menu */
+nav a {
+    margin: 0 12px;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #ffe6ef;
+    text-decoration: underline;
+}
+
+.search-box {
+    margin-top: 10px;
+}
+
+.search-input {
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+    width: 250px;
+}
+
+.search-btn {
+    padding: 8px 12px;
+    background-color: white;
+    color: pink;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.search-btn:hover {
+    background-color: #ffdee7;
+}
+
+
+main section {
+    padding: 40px;
+}
+
+main section h2 {
+    color: #d14b78;
+}
+
+main a {
+    background-color: pink;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+main a:hover {
+    background-color: #ff99bb;
+}
+
+footer {
+    background-color: pink;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+
+.social-container {
+    text-align: center;
+    padding: 10px;
+}
+
+.social-container img {
+    margin: 0 5px;
+    transition: transform 0.3s ease;
+}
+
+.social-container img:hover {
+    transform: scale(1.1);
+}
+
+
+@media (max-width: 600px) {
+    nav a {
+        display: block;
+        margin: 8px 0;
+    }
+
+    .search-input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .search-btn {
+        width: 100%;
+    }
+}
+
+.search-results {
+    background: white;
+    width: 250px;
+    margin-top: 5px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+    display: none;
+    position: absolute;
+    z-index: 1000;
+}
+
+.search-results p {
+    padding: 10px;
+    margin: 0;
+    cursor: pointer;
+    border-bottom: 1px solid #eee;
+}
+
+.search-results p:hover {
+    background: #fce4ec;
+}
+</style>

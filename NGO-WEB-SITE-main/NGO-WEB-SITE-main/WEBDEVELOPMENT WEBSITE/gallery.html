@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gallery | Bright Future Foundation</title>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #fff7fa;
+        margin: 0;
+        padding: 0;
+    }
+
+    header {
+        background-color: pink;
+        color: white;
+        padding: 15px;
+        text-align: center;
+    }
+
+    nav a {
+        margin: 0 10px;
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    h2 {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    /* Gallery Grid */
+    .gallery-container {
+        width: 90%;
+        margin: 20px auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 15px;
+    }
+
+    .gallery-container img {
+        width: 100%;
+        height: 230px;
+        object-fit: cover;
+        border-radius: 10px;
+        border: 3px solid pink;
+        transition: transform 0.3s;
+        cursor: pointer;
+    }
+
+    .gallery-container img:hover {
+        transform: scale(1.05);
+    }
+
+    footer {
+        background-color: pink;
+        color: white;
+        text-align: center;
+        padding: 15px;
+        margin-top: 20px;
+    }
+
+       .lightbox {
+        display: none;
+        position: fixed;
+        z-index: 9999;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.9);
+        align-items: center;
+        justify-content: center;
+    }
+
+    .lightbox img {
+        max-width: 90%;
+        max-height: 90%;
+        border-radius: 10px;
+    }
+
+    .lightbox:target {
+        display: flex;
+    }
+
+    .close-btn {
+        position: absolute;
+        top: 20px;
+        right: 30px;
+        font-size: 40px;
+        color: white;
+        text-decoration: none;
+    }
+
+    .close-btn:hover {
+        color: #ffb6d9;
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Bright Future Foundation</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="programs.html">Programs</a>
+        <a href="volunteer.html">Volunteer/Donate</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<h2>Our Gallery</h2>
+
+<div class="gallery-container">
+    <!-- Clickable images open lightbox -->
+    <a href="#img1"><img src="https://th.bing.com/th/id/OIP.Dok-WZPP8DUeCgNSAFqNfgHaE8?w=244&h=180&c=7&r=0&o=7&pid=1.7&rm=3" alt="Students learning in a class"></a>
+    <a href="#img2"><img src="https://th.bing.com/th/id/OIP.bVMhNmexBDAKsI4TQPlfYgHaHa?w=202&h=202&c=7&r=0&o=7&pid=1.7&rm=3" alt="Mentorship session with youth"></a>
+    <a href="#img3"><img src="https://th.bing.com/th/id/OIP.VSpwP0myhw1jivmQW7tPxQHaE8?w=242&h=180&c=7&r=0&o=7&pid=1.7&rm=3" alt="Scholarship award ceremony"></a>
+    <a href="#img4"><img src="https://th.bing.com/th/id/OIP.Cp45XVwJuAMqxtmq2iTLlAHaDD?w=327&h=144&c=7&r=0&o=7&pid=1.7&rm=3" alt="Volunteers teaching children"></a>
+</div>
+
+<div id="img1" class="lightbox">
+    <a href="#" class="close-btn">&times;</a>
+    <img src="https://th.bing.com/th/id/OIP.Dok-WZPP8DUeCgNSAFqNfgHaE8?w=244&h=180&c=7&r=0&o=7&pid=1.7&rm=3" alt="Students learning in a class">
+</div>
+
+<div id="img2" class="lightbox">
+    <a href="#" class="close-btn">&times;</a>
+    <img src="https://th.bing.com/th/id/OIP.bVMhNmexBDAKsI4TQPlfYgHaHa?w=202&h=202&c=7&r=0&o=7&pid=1.7&rm=3" alt="Mentorship session with youth">
+</div>
+
+<div id="img3" class="lightbox">
+    <a href="#" class="close-btn">&times;</a>
+    <img src="https://th.bing.com/th/id/OIP.VSpwP0myhw1jivmQW7tPxQHaE8?w=242&h=180&c=7&r=0&o=7&pid=1.7&rm=3" alt="Scholarship award ceremony">
+</div>
+
+<div id="img4" class="lightbox">
+    <a href="#" class="close-btn">&times;</a>
+    <img src="https://th.bing.com/th/id/OIP.Cp45XVwJuAMqxtmq2iTLlAHaDD?w=327&h=144&c=7&r=0&o=7&pid=1.7&rm=3" alt="Volunteers teaching children">
+</div>
+
+<footer>
+    &copy; 2025 Bright Future Foundation. All rights reserved.
+</footer>
+
+</body>
+</html>
+
